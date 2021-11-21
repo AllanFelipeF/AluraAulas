@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha(){
+      document.write('<br>');
+    };
+
+    function mostra(texto) {
+        document.write(texto);
+        pulaLinha();
+    }
+
+    function sorteia() {
+        var n = parseInt(prompt('Informe até que número pode ser sorteado!'));
+        return(Math.round(Math.random() * n));
+    }
+    var numeroPensado = sorteia();
+    var tentativa = 1;
+    while(tentativa <= 3) {
+        
+        var chute = parseInt(prompt('Chute um número.'));
+        
+        if(chute == numeroPensado) {
+            mostra('Você acertou o número que o computador pensou');
+            break;
+        } else {
+            mostra('Você errou!')
+        }
+        tentativa++
+    }
+
+
+</script>
