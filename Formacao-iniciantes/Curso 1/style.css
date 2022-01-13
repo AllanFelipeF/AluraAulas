@@ -27,7 +27,7 @@ em strong {
     color: red;
 }
 
-ul {
+.lista-beneficio {
     display: inline-block;
     vertical-align: top;
     width: 20%;
